@@ -1,5 +1,5 @@
-def square():
+def draw_square():
     print("------")
     print("!    !")
     print("------")
-square()
+
