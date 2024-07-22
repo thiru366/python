@@ -63,6 +63,43 @@ finally:
 
 
 
+try:
+   number = float(input("Enter a number: "))
+   square = number ** 2
+   print(f"The square of {number} is {square}")
+except ValueError:
+   print("Error: Invalid input. Please enter a numeric value.")
+else:
+   print("Successfully calculated the square.")
+
+
+
+
+try:
+   number = float(input("Enter a number: "))
+   square = number ** 2
+   print(f"The square of {number} is {square}")
+except ValueError:
+   print("Error: Invalid input. Please enter a numeric value.")
+else:
+   print("Successfully calculated the square.")
+finally:
+   print("End of program.")
+
+
+def check_negative(number):
+   if number < 0:
+       raise ValueError("The number cannot be negative.")
+
+
+
+while True:
+   try:
+       number = float(input("Enter a number: "))
+       print(f"You entered: {number}")
+       break
+   except ValueError:
+       print("Error: Invalid input. Please enter a numeric value.")
 
         
 
